@@ -31,9 +31,9 @@ namespace WpfApp13
             SolidColorBrush brush2 = new SolidColorBrush(Colors.Green);
             SolidColorBrush brush3 = new SolidColorBrush(Colors.Red);
 
-            Drawtriangle(20, 50, 20, 200, brush1);
-            Drawtriangle(20, 50, 170, 50, brush2);
-            Drawtriangle(170, 50, 20, 200, brush3);
+            Drawtriangle(50, 50, 50, 200, brush1);
+            Drawtriangle(50, 50, 200, 50, brush2);
+            Drawtriangle(200, 50, 50, 200, brush3);
 
 
         }

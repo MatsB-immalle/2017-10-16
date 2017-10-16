@@ -8,6 +8,10 @@
         Title="MainWindow" Height="350" Width="525">
     <Canvas x:Name="mijncanvas">
         <Button x:Name="Mijnknop" Content="TekenDriehoek" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Click="Mijnknop_Click" Height="36" Canvas.Left="386" Canvas.Top="121"/>
+        <Label x:Name="labelX" Content="X" Canvas.Left="195" Canvas.Top="111"/>
+        <Label x:Name="labelY" Content="Y" Canvas.Left="195" Canvas.Top="167"/>
+        <TextBlock x:Name="TextY" Canvas.Left="217" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="177"/>
+        <TextBlock x:Name="TextX" Canvas.Left="217" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="116" RenderTransformOrigin="0.264,0.184"/>
 
     </Canvas>
 </Window>

@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WpfApp13"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <Canvas x:Name="mijncanvas">
+        <Button x:Name="Mijnknop" Content="TekenDriehoek" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Click="Mijnknop_Click" Height="36" Canvas.Left="386" Canvas.Top="121"/>
+
+    </Canvas>
 </Window>

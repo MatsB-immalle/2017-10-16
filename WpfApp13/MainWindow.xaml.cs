@@ -24,5 +24,26 @@ namespace WpfApp13
         {
             InitializeComponent();
         }
+
+        private void Mijnknop_Click(object sender, RoutedEventArgs e)
+        {
+            Drawtriangle(20, 50, 20, 200, SolidColorBrush );
+            Drawtriangle(20, 50, 170, 50);
+            Drawtriangle(170, 50, 20, 200);
+
+
+        }
+
+        private void Drawtriangle(int x1, int y1, int x2, int y2, SolidColorBrush brushToUse)
+        {
+            Line lijn1 = new Line();
+
+            lijn1.X1 = x1;
+            lijn1.Y1 = y1;
+            lijn1.X2 = x2;
+            lijn1.Y2 = y2;            
+            lijn1.Stroke = brushToUse;
+            mijncanvas.Children.Add(lijn1);
+        }
     }
 }

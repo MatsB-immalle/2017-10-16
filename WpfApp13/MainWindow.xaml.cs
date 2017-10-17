@@ -27,16 +27,26 @@ namespace WpfApp13
 
         private void Mijnknop_Click(object sender, RoutedEventArgs e)
         {
+            int x;
+            x = Convert.ToInt32(box1.Text);
+
+            int y;
+            y = Convert.ToInt32(box2.Text);
+
+
             SolidColorBrush brush1 = new SolidColorBrush(Colors.Black);
             SolidColorBrush brush2 = new SolidColorBrush(Colors.Green);
             SolidColorBrush brush3 = new SolidColorBrush(Colors.Red);
 
-            Drawtriangle(50, 50, 50, 200, brush1);
-            Drawtriangle(50, 50, 200, 50, brush2);
-            Drawtriangle(200, 50, 50, 200, brush3);
+            Drawtriangle(50, 50, 50, (200+y), brush1);
+            Drawtriangle(50, 50, (200+x), 50 , brush2);
+            Drawtriangle((200+x) , 50, 50, (200+y), brush3);
+
 
 
         }
+
+
 
         private void Drawtriangle(int x1, int y1, int x2, int y2, SolidColorBrush brushToUse)
         {
@@ -45,9 +55,11 @@ namespace WpfApp13
             lijn1.X1 = x1;
             lijn1.Y1 = y1;
             lijn1.X2 = x2;
-            lijn1.Y2 = y2;            
+            lijn1.Y2 = y2;
             lijn1.Stroke = brushToUse;
             mijncanvas.Children.Add(lijn1);
         }
+
+
     }
 }
